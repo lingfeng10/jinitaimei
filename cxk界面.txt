@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F5F5">
+<ImageView
+    android:id="@+id/iv"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:background="@mipmap/cxk3">
+
+</ImageView>
+    <LinearLayout
+        android:id="@+id/ll_number"
+       android:layout_below="@id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:text="ikun账号:"
+            android:textColor="#000"
+            android:textSize="19dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/xk_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            android:text="ikun密码:"
+            android:textColor="#000"
+            android:textSize="20sp">
+
+        </TextView>
+        <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_toRightof="@id/tv_password"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:padding="10dp">
+    </EditText>
+
+
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll_password"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="40dp"
+    android:background="#3C8DC4"
+    android:text="登录"
+    android:textColor="#ffffff"
+    android:textSize="25dp">
+
+</Button>
+
+
+</RelativeLayout>
